@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsAppClone</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- LOGIN CHAT  -->
+<div id="login" class="login">
+
+<div class="login-box">
+        <h1>WhatsApp Clone</h1>
+    <input type="text" placeholder="Enter Your Name" id="username">
+    <button id="join">Join Chat</button>
+</div>
+</div>
+
+<!-- <!-- CHAT  APP -> -->
+ <div class="chat-app">
+    <div class="sidebar">
+        <div class="sidebar-header">Chats</div>
+        <ul class="users" id="users">
+
+        </ul>
+    </div>
+
+    <!-- CHAT  -->
+     <div class="chat">
+        <div class="chat-header">
+            <h3 id="chat-name">Welcome</h3>
+            <div id="chat-status">
+                Select a Chat to Start messaging........
+            </div>
+        </div>
+        <!-- initial window  -->
+<div class="welcome-screen" id="welcome-screen">
+    <h2>WhatsApp Web Clone </h2>
+    <p>Select any user from sidebar to start chat</p>
+</div>
+        <ul id="message-container" style="display: none;"></ul>
+
+    <div id="typing" style="display: none;">
+    <div class="typing-bubble">
+        <span id="typing-text"></span>
+        <div class="typing-dots">
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+        </div>
+    </div>
+</div>
+        <div class="input-area">
+            <input type="text" id="message-input" placeholder="Type a msg........" disabled>
+            <button id="send-button" disabled>Send</button>
+        </div>
+     </div>
+ </div>
+ <script src="main.js"></script>
+</body>
+</html>
